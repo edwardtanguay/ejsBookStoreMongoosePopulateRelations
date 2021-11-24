@@ -6,7 +6,8 @@
 		"customers": [
 			"619ece858558d24cf378e67a",
 			"619ece858558d24cf378e679"
-		]
+		],
+		"isbn": "1484220498"
 	},
 	{
 		"title": "Seven Databases in Seven Weeks",
@@ -17,7 +18,8 @@
 			"619ece858558d24cf378e676",
 			"619ece858558d24cf378e675",
 			"619ece858558d24cf378e674"
-		]
+		],
+		"isbn": "1680502530"
 	},
 	{
 		"title": "Socket.IO Cookbook",
@@ -25,7 +27,8 @@
 		"url": "https://www.amazon.de/Socket-IO-Cookbook-English-Tyson-Cadenhead/dp/1785880861",
 		"customers": [
 			"619ece858558d24cf378e678"
-		]
+		],
+		"isbn": "1785880861"
 	},
 	{
 		"title": "Practical JAMstack",
@@ -34,6 +37,7 @@
 		"customers": [
 			"619ece858558d24cf378e678",
 			"619ece858558d24cf378e679"
-		]
+		],
+		"isbn": "1484261763"
 	}
 ]
