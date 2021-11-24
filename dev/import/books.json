@@ -4,36 +4,36 @@
 		"author": "619eb62977b92af7bb30299d",
 		"url": "https://www.amazon.de/Advanced-API-Security-OAuth-Beyond/dp/1484220498",
 		"customers": [
-			"nnn",
-			"nnn"
+			"619ece858558d24cf378e67a",
+			"619ece858558d24cf378e679"
 		]
 	},
 	{
 		"title": "Seven Databases in Seven Weeks",
-		"author": "luke",
+		"author": "619ece858558d24cf378e67c",
 		"url": "https://www.amazon.de/Seven-Databases-Weeks-Modern-Movement/dp/1680502530",
 		"customers": [
-			"nnn",
-			"nnn",
-			"nnn",
-			"nnn"
+			"619ece858558d24cf378e677",
+			"619ece858558d24cf378e676",
+			"619ece858558d24cf378e675",
+			"619ece858558d24cf378e674"
 		]
 	},
 	{
 		"title": "Socket.IO Cookbook",
-		"author": "tyson",
+		"author": "619ece858558d24cf378e67d",
 		"url": "https://www.amazon.de/Socket-IO-Cookbook-English-Tyson-Cadenhead/dp/1785880861",
 		"customers": [
-			"nnn"
+			"619ece858558d24cf378e678"
 		]
 	},
 	{
 		"title": "Practical JAMstack",
-		"author": "Frank",
+		"author": "619ece858558d24cf378e67b",
 		"url": "https://www.amazon.de/Practical-JAMstack-Blazing-Simple-Development/dp/1484261763",
 		"customers": [
-			"nnn",
-			"nnn"
+			"619ece858558d24cf378e678",
+			"619ece858558d24cf378e679"
 		]
 	}
 ]
