@@ -1,6 +1,7 @@
 import BooksModel from '../models/books.js';
 
 export const getAllBooks = async () => {
-	const books = await BooksModel.find({});
+	const books = await BooksModel.find({})
+		.populate("author");
 	return books;
 }

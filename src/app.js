@@ -19,9 +19,10 @@ app.use(express.static(staticDirectory));
 app.get('/', async (req, res) => {
 	const books = await BooksController.getAllBooks();
 	console.log(books);
+	console.log(books.length);
 	res.render('index', {
 		pageTitle: "Welcome",
-		books 
+		books
 	});
 });
 

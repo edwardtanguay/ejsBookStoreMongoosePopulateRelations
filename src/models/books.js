@@ -1,8 +1,11 @@
 import mongoose from 'mongoose';
+import PersonsModel from '../models/persons.js';
+
+const Schema = mongoose.Schema;
 
 const booksSchema = mongoose.Schema({
 	title: String,
-	author: String
+	author: { type: Schema.ObjectId, ref: 'Person' }
 }, { collection: "books" });
 const BooksModel = mongoose.model("Book", booksSchema);
 
