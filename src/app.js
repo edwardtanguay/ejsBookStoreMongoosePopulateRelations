@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import * as SpeakersController from './controllers/speakers.js';
+import * as BooksController from './controllers/books.js';
 import * as PresentationsController from './controllers/presentations.js';
 import mongoose from 'mongoose';
 
@@ -15,9 +16,12 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './public/views'));
 app.use(express.static(staticDirectory));
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+	const books = await BooksController.getAllBooks();
+	console.log(books);
 	res.render('index', {
-		pageTitle: "Welcome"
+		pageTitle: "Welcome",
+		books 
 	});
 });
 

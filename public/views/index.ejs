@@ -1,6 +1,14 @@
 <%- include('_header.ejs')%>
-<h2>
-	<%=pageTitle%>
-</h2>
-<p>Welcome to the Berlin Mongoose Conference.</p>
-<%- include('_footer.ejs')%>
+	<h2>
+		<%=pageTitle%>
+	</h2>
+	<p>Welcome to the Berlin Mongoose Conference.</p>
+	<ul>
+		<% books.forEach(book=> { %>
+			<li>
+				<%=book.title%>
+			</li>
+			<% });
+			   %>
+	</ul>
+	<%- include('_footer.ejs')%>
