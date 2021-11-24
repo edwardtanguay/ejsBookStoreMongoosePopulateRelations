@@ -1,8 +1,6 @@
 import express from 'express';
 import path from 'path';
-import * as SpeakersController from './controllers/speakers.js';
 import * as BooksController from './controllers/books.js';
-import * as PresentationsController from './controllers/presentations.js';
 import mongoose from 'mongoose';
 
 mongoose.connect('mongodb://localhost:27017/mongoConference');
@@ -21,22 +19,8 @@ app.get('/', async (req, res) => {
 	console.log(books);
 	console.log(books.length);
 	res.render('index', {
-		pageTitle: "Welcome",
+		pageTitle: "Tech Bookstore",
 		books
-	});
-});
-
-app.get('/speakers', async (req, res) => {
-	res.render('speakers', {
-		pageTitle: "Speakers",
-		speakers: await SpeakersController.getAllSpeakers()
-	});
-});
-
-app.get('/presentations', async (req, res) => {
-	res.render('presentations', {
-		pageTitle: await PresentationsController.getPageTitle(),
-		presentations: await PresentationsController.getAllPresentations()
 	});
 });
 

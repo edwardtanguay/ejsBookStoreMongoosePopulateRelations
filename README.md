@@ -1,5 +1,3 @@
-# Node/Express/EJS/Mongoose Site with MVC Pattern
+# Node/Express/EJS/Mongoose site with related collection schemas 
 
-This project builds a mock conference site which has three pages: Welcome, Speakers and Presentations. 
-
-Each page has a route which loads a **Controller** which loads a Mongoose **Model** which delivers data which is sent to the EJS **View**.
+This site shows a book store that displays books, the information of which comes from two collections in the MongoDB database. The Mongoose ODM (Object Document Mapper) is used to connect (with `ref` and `populate()`) the two schemas for the collections **Books** and **Persons** much as `JOIN` does in an SQL database between tables.
