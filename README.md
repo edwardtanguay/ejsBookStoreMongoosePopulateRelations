@@ -1,4 +1,4 @@
-# Node/Express/EJS/Mongoose site with related collection schemas 
+# Node/Express/EJS/MVC/MongoDB/Mongoose/Sass site with related collection schemas 
 
 This site shows a book store that displays books, the information of which comes from two collections in the MongoDB database. The Mongoose ODM (Object Document Mapper) is used to connect (with `ref` and `populate()`) the two schemas for the collections **Books** and **Persons** much as `JOIN` does in an SQL database between tables.
 
