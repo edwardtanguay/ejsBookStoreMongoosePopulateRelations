@@ -16,6 +16,7 @@ app.use(express.static(staticDirectory));
 
 app.get('/', async (req, res) => {
 	const books = await BooksController.getAllBooks();
+	console.log(books);
 	res.render('index', {
 		pageTitle: "Tech Bookstore",
 		books

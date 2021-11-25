@@ -5,7 +5,10 @@ const Schema = mongoose.Schema;
 
 const booksSchema = mongoose.Schema({
 	title: String,
-	author: { type: Schema.ObjectId, ref: 'Person' }
+	author: { type: Schema.ObjectId, ref: 'Person' },
+	url: String,
+	customers: [{ type: Schema.ObjectId, ref: 'Person' }],
+	isbn: String
 }, { collection: "books" });
 const BooksModel = mongoose.model("Book", booksSchema);
 
