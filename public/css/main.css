@@ -5,4 +5,15 @@ body {
   font-size: 1.5rem;
   padding: 20px;
 }
+
+body div.book {
+  background-color: #9e8683;
+  margin: 0 0 20px 0;
+  color: #000;
+  padding: 20px;
+}
+
+body div.book img {
+  width: 140px;
+}
 /*# sourceMappingURL=main.css.map */

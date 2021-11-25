@@ -2,18 +2,10 @@
 	<h2>
 		<%=pageTitle%>
 	</h2>
-	<p></p>
-	<ul>
-		<% books.forEach(book=> { %>
-			<li>
-				<%=book.title%> (<%=book.author.lastName%>)
-						<ul>
-							<% book.customers.forEach(customer=> { %>
-								<li><%=customer.firstName%></li>
-								<% })%>
-						</ul>
-			</li>
-			<% });
-			   %>
-	</ul>
-	<%- include('_footer.ejs')%>
+	<% books.forEach(book=> { %>
+		<div class="book">
+			<img src="images/<%=book.isbn%>.jpg" alt="">
+			<%=book.title%>
+		</div>
+	<% }); %>
+<%- include('_footer.ejs')%>
