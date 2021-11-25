@@ -7,13 +7,32 @@ body {
 }
 
 body div.book {
-  background-color: #9e8683;
+  background-color: #471616;
   margin: 0 0 20px 0;
-  color: #000;
+  color: #ccc;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body div.book img {
-  width: 140px;
+  width: 120px;
+  -webkit-box-shadow: 3px 3px 13px 3px #000000;
+          box-shadow: 3px 3px 13px 3px #000000;
+}
+
+body div.book div.info {
+  margin: 0 0 0 25px;
+}
+
+body div.book div.title {
+  font-size: 1.8rem;
+}
+
+body div.book div.author .main {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #ebeb9a;
 }
 /*# sourceMappingURL=main.css.map */

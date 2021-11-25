@@ -5,7 +5,10 @@
 	<% books.forEach(book=> { %>
 		<div class="book">
 			<img src="images/<%=book.isbn%>.jpg" alt="">
-			<%=book.title%>
+			<div class="info">
+				<div class="title"><%=book.title%></div>
+				<div class="author">by <span class="main"><%=book.author.firstName%> <%=book.author.lastName%></span></div>
+			</div>
 		</div>
 	<% }); %>
 <%- include('_footer.ejs')%>

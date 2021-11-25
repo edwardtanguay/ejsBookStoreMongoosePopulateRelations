@@ -6,12 +6,27 @@ body {
 	padding: 20px;
 
 	div.book {
-		background-color: rgb(158, 134, 131);
+		background-color: rgb(71, 22, 22);
 		margin: 0 0 20px 0;
-		color: #000;
+		color: #ccc;
 		padding: 20px;
+		display: flex;
 		img {
-			width: 140px;
+			width: 120px;
+			box-shadow: 3px 3px 13px 3px #000000;
+		}
+		div.info {
+			margin: 0 0 0 25px;
+		}
+		div.title {
+			font-size: 1.8rem;
+		}
+		div.author {
+			.main {
+				font-size: 1.4rem;
+				font-style: italic;
+				color: rgb(235, 235, 154);
+			}
 		}
 	}
 }
