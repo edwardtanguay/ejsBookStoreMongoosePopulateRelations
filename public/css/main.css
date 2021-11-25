@@ -35,4 +35,22 @@ body div.book div.author .main {
   font-style: italic;
   color: #ebeb9a;
 }
+
+body div.book ul.customers {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+body div.book ul.customers li {
+  margin: 0 0 0 -15px;
+  font-style: italic;
+}
+
+body div.book ul.customers li .email {
+  color: #777;
+}
+
+body div.book div.header {
+  margin: 0 0 4px -39px;
+}
 /*# sourceMappingURL=main.css.map */
