@@ -6,7 +6,12 @@
 	<ul>
 		<% books.forEach(book=> { %>
 			<li>
-				<%=book.title%>
+				<%=book.title%> (<%=book.author.lastName%>)
+						<ul>
+							<% book.customers.forEach(customer=> { %>
+								<li><%=customer.firstName%></li>
+								<% })%>
+						</ul>
 			</li>
 			<% });
 			   %>
