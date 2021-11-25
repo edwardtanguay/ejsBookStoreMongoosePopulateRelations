@@ -4,8 +4,8 @@
 	</h2>
 	<% books.forEach(book=> { %>
 		<div class="book">
-			<img src="images/<%=book.isbn%>.jpg"
-				 alt="">
+			<a href="<%=book.url%>" target="_blank"> <img src="images/<%=book.isbn%>.jpg"
+				 alt=""></a>
 			<div class="info">
 				<div class="title">
 					<%=book.title%>
