@@ -3,7 +3,7 @@ import path from 'path';
 import * as BooksController from './controllers/books.js';
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://localhost:27017/mongoConference');
+mongoose.connect('mongodb://localhost:27017/test');
 
 const app = express();
 const __dirname = path.resolve(path.dirname(''));
@@ -16,7 +16,6 @@ app.use(express.static(staticDirectory));
 
 app.get('/', async (req, res) => {
 	const books = await BooksController.getAllBooks();
-	console.log(books);
 	res.render('index', {
 		pageTitle: "Tech Bookstore",
 		books
